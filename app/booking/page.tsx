@@ -35,19 +35,19 @@ const BookingPage = () => {
 
         <ul className="flex gap-8 font-medium items-center text-[#4a7a96]">
           <li className="hover:text-blue-600 cursor-pointer transition">
-            Home
+            <Link href="/">Home</Link>
           </li>
           <li className="hover:text-blue-600 cursor-pointer transition">
-            Services
+            <Link href="/services">Services</Link>
           </li>
           <li className="hover:text-blue-600 cursor-pointer transition">
-            About Us
+            <Link href="/about">About Us</Link>
           </li>
           <li className="hover:text-blue-600 cursor-pointer transition">
-            Contact
+            <Link href="/contact">Contact</Link>
           </li>
           <li className="bg-[#3b82f6] text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition cursor-pointer shadow-md">
-            Login
+            <Link href="/login">Login</Link>
           </li>
         </ul>
       </nav>

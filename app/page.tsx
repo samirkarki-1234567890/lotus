@@ -106,7 +106,14 @@ export default function Home() {
         </div>
 
         <div className="rounded-2xl bg-white/60 p-6 shadow-md backdrop-blur-md transition hover:shadow-lg">
-          <h3 className="mb-3 text-xl font-semibold">Event Coverage</h3>
+          <h3 className="mb-3 text-xl font-semibold">
+            <Link
+              href="/services"
+              className="rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-teal-600"
+            >
+              Add Events +
+            </Link>
+          </h3>
           <p className="text-sm text-gray-600">
             High-quality photography for corporate and personal events.
           </p>
