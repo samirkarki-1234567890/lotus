@@ -81,9 +81,12 @@ export default function Home() {
           more. Let Lotus Photo Studio turn your memories into timeless art.
         </p>
 
-        <button className="rounded-xl bg-blue-500 px-6 py-3 text-white shadow-md transition hover:bg-blue-600">
+        <Link
+          href="/booking"
+          className="rounded-xl bg-blue-500 px-6 py-3 text-white shadow-md transition hover:bg-blue-600"
+        >
           Book a Session
-        </button>
+        </Link>
       </section>
 
       {/* Services Preview */}
