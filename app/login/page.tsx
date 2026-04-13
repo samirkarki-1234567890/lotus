@@ -21,16 +21,16 @@ export default function LoginPage() {
       {
         username: "admin",
         password: "9999",
-        name: "Test User",
-        role: "Customer",
-        email: "user@lotus.com",
+        name: "lotus admin",
+        role: "Manager",
+        email: "admin9999@lotus.com",
       },
     ];
 
     const allUsers = [...defaultUsers, ...savedUsers];
 
     const foundUser = allUsers.find(
-      (user) => user.username === username && user.password === password
+      (user) => user.username === username && user.password === password,
     );
 
     if (foundUser) {
@@ -42,7 +42,7 @@ export default function LoginPage() {
           name: foundUser.name,
           role: foundUser.role,
           email: foundUser.email,
-        })
+        }),
       );
 
       router.push("/dashboard");

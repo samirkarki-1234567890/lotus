@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function signupPage() {
   const router = useRouter();
@@ -27,7 +28,7 @@ export default function signupPage() {
     const existingUsers = JSON.parse(localStorage.getItem("users") || "[]");
 
     const userExists = existingUsers.find(
-      (u: any) => u.username === form.username
+      (u: any) => u.username === form.username,
     );
 
     if (userExists) {
@@ -90,6 +91,9 @@ export default function signupPage() {
           <button className="w-full bg-blue-500 text-white py-3 rounded-xl">
             Sign Up
           </button>
+          <Link href="/login" className="text-blue-600 hover:underline">
+            Already have an account? Login
+          </Link>
         </form>
       </div>
     </main>
