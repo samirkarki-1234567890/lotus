@@ -111,7 +111,7 @@ export default function Home() {
               href="/services"
               className="rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-teal-600"
             >
-              Add Events +
+              Manage Events +
             </Link>
           </h3>
           <p className="text-sm text-gray-600">
