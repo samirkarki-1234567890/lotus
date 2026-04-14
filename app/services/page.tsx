@@ -352,10 +352,6 @@ export default function ServicesPage() {
                 </tbody>
               </table>
             </div>
-
-            <button className="mt-6 w-full rounded-xl bg-[#2f80ed] px-4 py-3 text-sm font-semibold text-white shadow transition hover:bg-[#256fdb]">
-              Logout
-            </button>
           </div>
         </div>
       </section>
