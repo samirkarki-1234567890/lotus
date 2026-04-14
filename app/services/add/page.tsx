@@ -14,7 +14,9 @@ export default function AddServicePage() {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({
@@ -51,31 +53,6 @@ export default function AddServicePage() {
 
   return (
     <div className="min-h-screen bg-[#d7e3f3] text-[#245072]">
-      {/* Navbar */}
-      <nav className="w-full border-b border-[#b8c8dc] bg-[#dfe8f4] shadow-sm">
-        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 md:px-10">
-          <h1 className="text-2xl font-bold md:text-3xl">Lotus Photo Studio</h1>
-
-          <div className="hidden items-center gap-10 text-[18px] font-medium md:flex">
-            <Link href="/" className="transition hover:text-[#2f80ed]">
-              Home
-            </Link>
-            <Link href="/services" className="transition hover:text-[#2f80ed]">
-              Services
-            </Link>
-            <Link href="/" className="transition hover:text-[#2f80ed]">
-              About Us
-            </Link>
-            <Link href="/" className="transition hover:text-[#2f80ed]">
-              Contact
-            </Link>
-            <button className="rounded-xl bg-[#2f80ed] px-6 py-3 font-semibold text-white shadow transition hover:bg-[#256fdb]">
-              Login
-            </button>
-          </div>
-        </div>
-      </nav>
-
       <section className="mx-auto max-w-[1100px] px-6 pb-12 pt-12 md:px-10">
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
