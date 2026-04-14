@@ -31,30 +31,6 @@ const BookingPage = () => {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#eef4ff] to-[#d1e3ff] text-[#1f4e6b] font-sans">
-      <nav className="flex justify-between items-center px-10 py-5 bg-white/80 backdrop-blur-md border-b border-blue-100 shadow-sm">
-        <h1 className="text-2xl font-bold tracking-tight text-[#1f4e6b]">
-          Lotus Photo Studio
-        </h1>
-
-        <ul className="flex gap-8 font-medium items-center text-[#4a7a96]">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/about">About Us</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li className="bg-[#3b82f6] text-white px-6 py-2 rounded-lg font-semibold shadow-md">
-            <Link href="/login">Login</Link>
-          </li>
-        </ul>
-      </nav>
-
       <div className="max-w-4xl mx-auto px-6 py-12">
         <h1 className="text-5xl font-bold text-center mb-4 text-[#1f4e6b]">
           Book Your <span className="text-blue-600">Session</span>
